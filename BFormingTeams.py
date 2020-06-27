@@ -19,11 +19,11 @@ for i in range(noOfPairOfArchenemies):
         elif pairOfArchenemies[1] in teamX: # and pairOfArchenemies[0] not in teamX:
             archenemies2IncludedInATeam = True
 
-    if pairOfArchenemies[0] in dictOfTeams[1] and pairOfArchenemies[0] not in dictOfTeams[2]:
-
-    elif pairOfArchenemies[1] in dictOfTeams[1] and pairOfArchenemies[1] not in dictOfTeams[2]:
-
-    elif
+    # if pairOfArchenemies[0] in dictOfTeams[1] and pairOfArchenemies[0] not in dictOfTeams[2]:
+    #
+    # elif pairOfArchenemies[1] in dictOfTeams[1] and pairOfArchenemies[1] not in dictOfTeams[2]:
+    #
+    # elif
 
 
     for teamX in dictOfTeams.values():
