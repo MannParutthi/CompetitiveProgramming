@@ -78,6 +78,11 @@ else:
 # To make a dictionary from 1 to n with [] as value
 # print({k+1: [] for k in range(3)})
 
+#Substrings
+s = "manan"
+allPossibleSubstrings = [s[i:j] for i in range(len(s)) for j in range(i+1,len(s)+1)]
+print(allPossibleSubstrings)
+
 # Bubble Sort
 def bubbleSort(a):
     noOfSwaps = 0
