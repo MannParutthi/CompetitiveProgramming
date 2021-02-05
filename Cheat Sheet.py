@@ -78,6 +78,15 @@ else:
 # To make a dictionary from 1 to n with [] as value
 # print({k+1: [] for k in range(3)})
 
+#Sorting a list of objects by age and if age is same then by name
+my_list = [
+  {"name": "Smit", "age": 20 },
+  {"name": "Jay", "age": 15 },
+  {"name": "Jay", "age": 20 },
+]
+my_list.sort( key = lambda x: (x["age"], x["name"]) )
+print(my_list)
+
 #Substrings
 s = "manan"
 allPossibleSubstrings = [s[i:j] for i in range(len(s)) for j in range(i+1,len(s)+1)]
