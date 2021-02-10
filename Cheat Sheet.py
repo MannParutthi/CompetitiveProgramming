@@ -107,3 +107,12 @@ def bubbleSort(a):
         else:
             break
     return {noOfSwaps, a}
+
+#bisect - for maintaining a list in sorted order without having to sort the list after each insertion (uses Array bisection algorithm)
+import bisect
+arr = [0,1,1,2] #array should be sorted
+print(bisect.bisect_left(arr, 1)) #1 returns index of left most ele 
+print(bisect.bisect_right(arr, 1)) #3 returns next index of right most ele
+array = [0,2,3] #array should be sorted
+bisect.insort(array, 1) #inserts value at the perfect position in sorted array  
+print(array) #[0, 1, 2, 3]
