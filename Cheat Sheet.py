@@ -128,7 +128,7 @@ def merge(a1, a2):
         else:
             result.append(a2[j])
             j += 1
-            swaps += m - i
+            swaps += m - i # arr is sorted so all ele after i till the end of arr will be greater and has to be swapped (i => current index, m => len of arr)
     result += a1[i:]
     result += a2[j:]    
     return swaps, result    
