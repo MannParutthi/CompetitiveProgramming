@@ -142,3 +142,13 @@ def msort(arr):
         return m_swaps + left_swaps + right_swaps, result
     return 0, arr
 msort([5,4,1,2,3])
+
+
+# Counter - Gives the count of each element in dictionary format & can be accessed like a dictionary => for key, val in Counter(a).items()
+from collections import Counter
+a = "cde"
+b = "abc"
+print(Counter(a)) #Counter({'c': 1, 'd': 1, 'e': 1})
+print(Counter(b)) #Counter({'a': 1, 'b': 1, 'c': 1})
+print(Counter(a) & Counter(b)) #Intersection - Counter({'c': 1})
+print(Counter(a) | Counter(b)) #Union - Counter({'c': 1, 'd': 1, 'e': 1, 'a': 1, 'b': 1})
