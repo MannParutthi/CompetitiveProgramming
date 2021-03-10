@@ -1,5 +1,26 @@
 # https://www.youtube.com/watch?v=sSno9rV8Rhg
 
+#1st Approach
+def lcs(s1, s2):
+    matrix = [["" for x in range(len(s2))] for x in range(len(s1))]
+    for i in range(len(s1)):
+        for j in range(len(s2)):
+            if s1[i] == s2[j]:
+                if i == 0 or j == 0:
+                    matrix[i][j] = s1[i]
+                else:
+                    matrix[i][j] = matrix[i-1][j-1] + s1[i]
+            else:
+                matrix[i][j] = max(matrix[i-1][j], matrix[i][j-1], key=len)
+
+    lcsStr = matrix[-1][-1] # OR lcsStr = matrix[len(s1)-1][len(s2)-1]
+    print('Length of LCS:',len(lcsStr))
+    print('LCS String:', lcsStr)
+
+lcs('SHINCHAN', 'NOHARAAA') 
+
+
+#2nd Approach
 def LCS(X, Y):
     m = len(X) 
     n = len(Y)
