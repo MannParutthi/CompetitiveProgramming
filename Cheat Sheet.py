@@ -166,7 +166,7 @@ def isPrime(n) :
   while(i * i <= n) : # factors after i*i<=n are same as before
     if (n % i == 0 or n % (i + 2) == 0) : # checking for i and i+2
       return False
-    i = i + 6 #all the prime no's are of the form 6k+1 / 6k-1 (2 and 3 exception)
+    i += 6 #all the prime no's are of the form 6k+1 / 6k-1 (2 and 3 exception)
   return True
 
 print(isPrime(997))
