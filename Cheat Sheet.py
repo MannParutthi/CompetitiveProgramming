@@ -152,3 +152,22 @@ print(Counter(a)) #Counter({'c': 1, 'd': 1, 'e': 1})
 print(Counter(b)) #Counter({'a': 1, 'b': 1, 'c': 1})
 print(Counter(a) & Counter(b)) #Intersection - Counter({'c': 1})
 print(Counter(a) | Counter(b)) #Union - Counter({'c': 1, 'd': 1, 'e': 1, 'a': 1, 'b': 1})
+
+# Optimal Way to find Prime Number
+def isPrime(n) : 
+  if (n <= 1) :  # 1 and no's less than 1 are not prime 
+    return False
+  if (n <= 3) : # 2 and 3 are prime numbers
+    return True
+  if (n % 2 == 0 or n % 3 == 0) : # any no divisible by 2 or 3 is not prime
+    return False
+ 
+  i = 5
+  while(i * i <= n) : # factors after i*i<=n are same as before
+    if (n % i == 0 or n % (i + 2) == 0) : # checking for i and i+2
+      return False
+    i = i + 6 #all the prime no's are of the form 6k+1 / 6k-1 (2 and 3 exception)
+  return True
+
+print(isPrime(997))
+
