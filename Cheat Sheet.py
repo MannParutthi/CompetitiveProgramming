@@ -193,3 +193,5 @@ heapq.heappush(minHeap, 2) # adds ele into heap
 heapq.heappush(minHeap, 3) # adds ele into heap
 heapq.heappop(minHeap) # pops the min ele from heap => 1
 
+# can be used inside a function
+nonlocal q, que, dict, minHeap # so that there is no need to pass them in every func call
