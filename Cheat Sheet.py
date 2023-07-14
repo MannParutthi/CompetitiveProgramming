@@ -186,3 +186,10 @@ que.pop() # 2 => pops last ele X
 
 dict = collections.defaultdict(list) # default dict ; all the values with ve initialized as [] empty list by default
 dict['A'].append['B'] # => A: [B] => no need to initialize like if 'A' not in dict then dict['A'] = [] and then append
+
+minHeap = []
+heapq.heappush(minHeap, 1) # adds ele into heap
+heapq.heappush(minHeap, 2) # adds ele into heap
+heapq.heappush(minHeap, 3) # adds ele into heap
+heapq.heappop(minHeap) # pops the min ele from heap => 1
+
