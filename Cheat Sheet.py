@@ -177,8 +177,12 @@ q = collections.deque()
 q.append(1)
 q.append(2) 
 q.popleft() # 1 => pops first ele FIFO
-q.pop(0) # 1 => pops first ele FIFO
 q.pop() # 2 => pops last ele X 
+
+# another way of queue
+que = [1,2]
+que.pop(0) # 1 => pops first ele FIFO
+que.pop() # 2 => pops last ele X
 
 dict = collections.defaultdict(list) # default dict ; all the values with ve initialized as [] empty list by default
 dict['A'].append['B'] # => A: [B] => no need to initialize like if 'A' not in dict then dict['A'] = [] and then append
