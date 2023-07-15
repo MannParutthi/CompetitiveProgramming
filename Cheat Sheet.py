@@ -195,3 +195,11 @@ heapq.heappop(minHeap) # pops the min ele from heap => 1
 
 # can be used inside a function - very useful for recursive funciton calls like DFS 
 nonlocal q, que, dict, minHeap # so that there is no need to pass them in every func call
+
+# Defining a positive infinite integer
+positive_infinity = float('inf')
+print('Positive Infinity: ', positive_infinity)
+ 
+# Defining a negative infinite integer
+negative_infinity = float('-inf')
+print('Negative Infinity: ', negative_infinity)
