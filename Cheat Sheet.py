@@ -203,3 +203,11 @@ print('Positive Infinity: ', positive_infinity)
 # Defining a negative infinite integer
 negative_infinity = float('-inf')
 print('Negative Infinity: ', negative_infinity)
+
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+transposedMatrix = list(zip(*matrix)) # gives list of tuples
+print("transposedMatrix => ", transposedMatrix) # [(1, 4, 7), (2, 5, 8), (3, 6, 9)]
