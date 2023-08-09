@@ -214,3 +214,5 @@ print("transposedMatrix => ", transposedMatrix) # [(1, 4, 7), (2, 5, 8), (3, 6, 
 
 arr = [1,2,3,4,5,6,7,8]
 print("Random Choice with equal probability", random.choice(arr)) # O(logn) / O(n)
+
+print("XOR of two similar values is always Zero", 2^2)
