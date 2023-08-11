@@ -218,3 +218,5 @@ print("Random Choice with equal probability", random.choice(arr)) # O(logn) / O(
 print(random.randint(3, 9)) # Return a number between 3 and 9 (both inclusive)
 
 print("XOR of two similar values is always Zero", 2^2)
+
+print("returns True if all items in an iterable are true, otherwise it returns False", all([True, True, True]), all([0, 1, 1]), all((0, True, False)) )
