@@ -222,7 +222,7 @@ print("XOR of two similar values is always Zero", 2^2)
 print("returns True if all items in an iterable are true, otherwise it returns False", all([True, True, True]), all([0, 1, 1]), all((0, True, False)) )
 
 # get K largest elements & K smallest elements
-freqMap = { 'A': 3, 'B': 4, 'C': 5, 'D': 1, 'E': 2 }
-k = 3
+freqMap = { 'A': 3, 'B': 4, 'C': 5, 'D': 1, 'E': 2, 'F': 3 }
+k = 3 # if tie between two A & F has same freq => first occuring in freqMap
 print(heapq.nlargest(k, freqMap.keys(), key=freqMap.get)) # ['C', 'B', 'A'] => 3 most freq ele
 print(heapq.nsmallest(k, freqMap.keys(), key=freqMap.get)) # ['D', 'E', 'A'] => 3 least freq ele
